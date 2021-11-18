@@ -1,6 +1,11 @@
 #include <iostream>
+#include <fstream>
+#include <iomanip>
 #include <cstring>
+#include <cstdlib>
+#include <vector>
 #include <cctype>
+#include <cmath>
 using namespace std;
 
 // Assignment 5 - Exercise 1
@@ -27,16 +32,16 @@ void grammarly(char sentence[])
             sentence[i] = tolower(sentence[i]);
         }
     }
-
-    cout << sentence;
+    cout << "OUTPUT: " << sentence;
 }
 
 int main()
 {
     // Assignment 5 - Exercise 1
 
-    char sentence[100];
-    cout << "Input a sentence (No more than 100 characters): ";
+    char sentence[100], choice1;
+    cout << "Exercise 1\n";
+    cout << "Input sentence (No more than 100 characters): ";
     cin.getline(sentence, 100);
     grammarly(sentence);
 
