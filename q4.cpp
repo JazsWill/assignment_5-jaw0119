@@ -13,7 +13,6 @@ int main()
   // Assignment 5 - Exercise 4
 
     char choice4;
-    int ch, count = 0;
     string answers, question;
     //char question[100];
     fstream fileAnswers("answers.txt");
